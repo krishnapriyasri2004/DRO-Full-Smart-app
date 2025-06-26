@@ -3,8 +3,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'dro app',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  description: 'dro system',
+  generator: 'dev',
 }
 
 export default function RootLayout({
