@@ -1,7 +1,3 @@
-Here is your **final version of the `README.md` file**, formatted correctly for GitHub. You can **copy-paste** this directly into your `README.md` file in your GitHub repo:
-
----
-
 ```markdown
 # Real-Time Delivery Route Optimization System
 
@@ -177,12 +173,3 @@ For any issues or questions, feel free to contact:
 
 * 📧 **Email**: [krishnapriyasri04@gmail.com](mailto:krishnapriyasri04@gmail.com)
 * 📞 **Phone**: +91 90475 47774
-
-```
-
----
-
-✅ This version is **fully compatible with GitHub**, correctly formatted in Markdown, and includes everything you asked for.
-
-Let me know if you'd like me to help you push this to your GitHub repo.
-```
