@@ -169,18 +169,23 @@ Need help or want to contribute?
 ## 📸 Screenshots
 
 ### 🏠 Home Page
+![Home](https://github.com/krishnapriyasri2004/DRO-Full-Smart-app/blob/main/assets/home.png?raw=true)
 
-![Home](assets/home.png)
+### 📊 Cargo Assignment
+![Cargo Assignment](https://github.com/krishnapriyasri2004/DRO-Full-Smart-app/blob/main/assets/cargo_assignment.png?raw=true)
 
-### 📊 Dashboard
+### 🗺️ Coimbatore Route Map
+![Route Map](https://github.com/krishnapriyasri2004/DRO-Full-Smart-app/blob/main/assets/cbe_route_map.png?raw=true)
 
-![Dashboard](assets/dashboard.png)
+### 👤 Delivery Partner Dashboard
+![Delivery Partner](https://github.com/krishnapriyasri2004/DRO-Full-Smart-app/blob/main/assets/delivery_partner.png?raw=true)
 
-### 🗺️ Optimized Route
+### 🗂️ Routes Overview
+![Routes](https://github.com/krishnapriyasri2004/DRO-Full-Smart-app/blob/main/assets/route.png?raw=true)
 
-![Route Map](assets/route_map.png)
+### ⚙️ Settings Page
+![Settings](https://github.com/krishnapriyasri2004/DRO-Full-Smart-app/blob/main/assets/settings.png?raw=true)
 
----
 
 ## 📄 License
 
