@@ -1,35 +1,37 @@
-```markdown
-# Real-Time Delivery Route Optimization System
 
-A comprehensive system for optimizing delivery routes, managing cargo, and tracking deliveries in real-time, with special features for the Coimbatore region.
+```markdown
+# 🚚 Real-Time Delivery Route Optimization System
+
+A comprehensive system for optimizing delivery routes, managing cargo, and tracking deliveries in real-time — with a special focus on the Coimbatore region.
 
 🌐 **Live Demo**: [https://dro-full-smart-app-production.up.railway.app](https://dro-full-smart-app-production.up.railway.app)  
-📧 **Email**: krishnapriyasri04@gmail.com  
+📧 **Email**: [krishnapriyasri04@gmail.com](mailto:krishnapriyasri04@gmail.com)  
 📞 **Phone**: +91 90475 47774
 
 ---
 
-## Features
+## 🧠 Features
 
-- **Route Optimization**: Multiple algorithms for efficient route planning
-- **Cargo Management**: Knapsack algorithm for optimal cargo loading
-- **Real-Time Tracking**: Monitor deliveries and update statuses
-- **Coimbatore Mapping**: Specialized features for the Coimbatore region
-- **Analytics Dashboard**: Performance metrics and reporting
+- ✅ **Route Optimization**: Multiple algorithms for efficient delivery planning  
+- 📦 **Cargo Management**: Knapsack algorithm for optimal cargo loading  
+- 📡 **Real-Time Tracking**: Monitor delivery status and performance  
+- 🗺️ **Coimbatore Mapping**: Region-specific enhancements  
+- 📊 **Analytics Dashboard**: Performance reports and insights  
 
 ---
 
-## Getting Started
+## ⚙️ Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
 
-- Node.js 18+ and npm
-- MySQL 8.0+
-- Docker (optional, for containerized deployment)
+- Node.js 18+  
+- npm  
+- MySQL 8.0+  
+- Docker (optional)
 
-### Environment Variables
+### 🌱 Environment Variables
 
-Create a `.env` file in the root directory with the following variables:
+Create a `.env` file in the root directory with:
 
 ```
 
@@ -44,132 +46,151 @@ NEXT\_PUBLIC\_API\_URL=[http://localhost/api](http://localhost/api)
 
 ---
 
-### Installation
+### 🛠 Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/krishnapriyasri2004/DRO-Full-Smart-app.git
-   cd delivery-route-optimizer
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/krishnapriyasri2004/DRO-Full-Smart-app.git
+cd delivery-route-optimizer
 ````
 
-2. Install dependencies:
+2. **Install dependencies**
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-3. Set up the database:
+3. **Set up the MySQL database**
 
-   ```bash
-   mysql -u your_mysql_username -p < db/schema.sql
-   ```
+```bash
+mysql -u your_mysql_username -p < db/schema.sql
+```
 
-4. Run the development server:
+4. **Run the app**
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-### Docker Setup
-
-1. Build the Docker image:
-
-   ```bash
-   docker build -t delivery-route-optimizer .
-   ```
-
-2. Run the container:
-
-   ```bash
-   docker run -p 3000:3000 --env-file .env delivery-route-optimizer
-   ```
+Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Usage Guide
+### 🐳 Docker Setup (Optional)
 
-### Route Management
+1. **Build Docker image**
 
-1. Navigate to the Routes section
-2. Click "Create New Route"
-3. Enter route details and starting point
-4. Add delivery points
-5. Select optimization algorithm
-6. Generate and review the route
-7. Assign to a vehicle and driver
+```bash
+docker build -t delivery-route-optimizer .
+```
 
-### Cargo Management
+2. **Run Docker container**
 
-1. Navigate to the Cargo section
-2. Add cargo items with weight, dimensions, and priority
-3. Use the "Optimize Cargo" feature to run the knapsack algorithm
-4. Review optimization results
-5. Assign cargo to vehicles
-
-### Coimbatore-Specific Features
-
-1. Select "Coimbatore" in the region dropdown
-2. Use pre-loaded landmarks and areas
-3. Enable traffic data integration
-4. Use Tamil language support for local addressing
+```bash
+docker run -p 3000:3000 --env-file .env delivery-route-optimizer
+```
 
 ---
 
-## Algorithms
+## 🚀 Usage Guide
 
-### Knapsack Algorithm
+### 📍 Route Management
 
-Used for cargo loading optimization:
+* Go to the **Routes** section
+* Click "Create New Route"
+* Enter route and delivery points
+* Choose algorithm
+* Generate and assign to vehicle
 
-* Maximizes the value (priority) of cargo within weight constraints
-* Ensures high-priority items are loaded first
-* Optimizes vehicle capacity utilization
+### 📦 Cargo Management
 
-### Greedy Algorithm
+* Go to **Cargo** section
+* Add item details (weight, priority)
+* Click "Optimize Cargo" (Knapsack algorithm)
+* Review and assign
 
-Used for route optimization:
+### 📌 Coimbatore-Specific Features
 
-* Selects the nearest unvisited location at each step
-* Fast computation, suitable for real-time updates
-* Good for scenarios with many delivery points
-
-### Dynamic Programming
-
-Used for complex route optimization:
-
-* Finds the globally optimal solution
-* More computationally intensive than greedy approach
-* Best for scenarios with fewer delivery points
+* Select **Coimbatore** in region dropdown
+* Access preloaded areas and landmarks
+* Use **Tamil support** and traffic integration
 
 ---
 
-## Database Schema
+## 🧮 Algorithms Used
 
-The system uses the following main tables:
+### 🎒 Knapsack Algorithm
 
-* `locations`: Stores all delivery points, depots, and pickup locations
-* `vehicles`: Information about delivery vehicles
-* `cargo`: Details of cargo items
-* `routes`: Route information and settings
-* `route_points`: Individual points in a route
-* `coimbatore_areas`: Coimbatore-specific area information
-* `coimbatore_landmarks`: Important landmarks in Coimbatore
+* Maximizes priority cargo within space
+* Ideal for load balancing and space efficiency
+
+### ⚡ Greedy Algorithm
+
+* Fast and real-time
+* Picks the next nearest unvisited point
+
+### 📊 Dynamic Programming
+
+* Computes globally optimal routes
+* Best when fewer but high-value deliveries exist
 
 ---
 
-## Staff Training
+## 🗃️ Database Schema Overview
 
-For detailed staff training materials, please refer to the Training Guide section in the application.
+| Table Name             | Description                       |
+| ---------------------- | --------------------------------- |
+| `locations`            | Delivery and depot points         |
+| `vehicles`             | Delivery vehicle information      |
+| `cargo`                | Cargo item details                |
+| `routes`               | Route metadata and configurations |
+| `route_points`         | Each point/stop within a route    |
+| `coimbatore_areas`     | Predefined areas in Coimbatore    |
+| `coimbatore_landmarks` | Key landmarks in the region       |
 
 ---
 
-## Support
+## 👩‍🏫 Staff Training
 
-For any issues or questions, feel free to contact:
+Refer to the **Training Guide section** inside the app for usage videos, documentation, and best practices.
 
-* 📧 **Email**: [krishnapriyasri04@gmail.com](mailto:krishnapriyasri04@gmail.com)
-* 📞 **Phone**: +91 90475 47774
+---
+
+## 🛟 Support
+
+Need help or want to contribute?
+
+* 📧 Email: [krishnapriyasri04@gmail.com](mailto:krishnapriyasri04@gmail.com)
+* 📞 Phone: +91 90475 47774
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home](assets/home.png)
+
+### 📊 Dashboard
+
+![Dashboard](assets/dashboard.png)
+
+### 🗺️ Optimized Route
+
+![Route Map](assets/route_map.png)
+
+---
+
+## 📄 License
+
+MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+### ✨ Built with Passion for Logistics & Optimization
+
+Empowering smarter deliveries with AI, algorithms, and modern web technology.
+
+```
+
