@@ -1,7 +1,3 @@
-Here is your updated `README.md` file with the **live demo link**, **your contact details**, and all your current project info:
-
----
-
 ```markdown
 # Real-Time Delivery Route Optimization System
 
