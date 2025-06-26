@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "db:setup": "bash setup-db.sh",
+    "db:init": "node -e \"require('./lib/db-init.js')()\""
+  },
+  "dependencies": {
+    "mysql2": "^3.6.0",
+    "bcrypt": "^5.1.1"
+  }
+}
